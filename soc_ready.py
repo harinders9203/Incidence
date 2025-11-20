@@ -538,7 +538,7 @@ class SOCSecurityAnalyzer:
     
     def __init__(self):
         self.version = "4.1.0"
-        self.vt_api_key = "0af097982ab18dd43e82486df7d2ed7ad483757fcecbb9ac05318a09b6449b4e"
+        self.vt_api_key = input()
         """Please update your API key here generate it from the Virustotal's official site"""
         self.vt_base_url = "https://www.virustotal.com/api/v3"
         
