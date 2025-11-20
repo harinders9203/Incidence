@@ -538,7 +538,7 @@ class SOCSecurityAnalyzer:
     
     def __init__(self):
         self.version = "4.1.0"
-        self.vt_api_key = input("Please enter your VirusTotal API:")
+        self.vt_api_key = "0af097982ab18dd43e82486df7d2ed7ad483757fcecbb9ac05318a09b6449b4e"
         """Please update your API key here generate it from the Virustotal's official site"""
         self.vt_base_url = "https://www.virustotal.com/api/v3"
         
@@ -1421,25 +1421,25 @@ class SOCSecurityAnalyzer:
         self.root.configure(bg='#f0f0f0')
         
         # Header
-        header_frame = tk.Frame(self.root, bg='#2c3e50', height=80)
+        header_frame = tk.Frame(self.root, bg="#3760c7", height=100)
         header_frame.pack(fill=tk.X)
         header_frame.pack_propagate(False)
-        
+
         title_label = tk.Label(
             header_frame,
             text="Enhanced SOC Security Analyzer",
-            font=('Segoe UI', 20, 'bold'),
-            fg='white',
-            bg='#2c3e50'
+            font=('Times New Roman', 20, 'bold'),
+            # fg='white',
+            # bg='#2c3e50'
         )
         title_label.pack(pady=15)
         
         subtitle_label = tk.Label(
             header_frame,
             text="with Windows Service Analysis",
-            font=('Segoe UI', 12),
-            fg='#bdc3c7',
-            bg='#2c3e50'
+            font=('Times New Roman', 12),
+            # fg='#bdc3c7',
+            # bg='#2c3e50'
         )
         subtitle_label.pack()
         
@@ -1455,7 +1455,7 @@ class SOCSecurityAnalyzer:
         status_text += f"Cryptography: {'✅ Available' if CRYPTO_AVAILABLE else '❌ Not Available'} | "
         status_text += f"Windows APIs: {'✅ Available' if WIN32_AVAILABLE else '❌ Not Available'}"
         
-        tk.Label(status_frame, text=status_text, font=('Segoe UI', 9)).pack(pady=5)
+        tk.Label(status_frame, text=status_text, font=('Times New Roman', 9)).pack(pady=5)
         
         # Configuration frame
         config_frame = tk.LabelFrame(main_frame, text="Analysis Configuration", font=('Arial', 12, 'bold'))
@@ -1483,8 +1483,8 @@ class SOCSecurityAnalyzer:
         self.start_button = tk.Button(
             control_frame,
             text="🚀 Start Enhanced Security Analysis",
-            font=('Segoe UI', 14, 'bold'),
-            bg='#27ae60',
+            font=('Times New Roman', 14, 'bold'),
+            bg="#4486dd",
             fg='white',
             command=self.start_analysis_gui,
             height=2
@@ -1495,7 +1495,7 @@ class SOCSecurityAnalyzer:
         self.reports_button = tk.Button(
             control_frame,
             text="📁 Open Reports Folder",
-            font=('Segoe UI', 12),
+            font=('Times New Roman', 12),
             bg='#3498db',
             fg='white',
             command=self.open_reports_folder
@@ -1533,11 +1533,11 @@ class SOCSecurityAnalyzer:
         self.log_text = tk.Text(
             log_scroll_frame,
             wrap=tk.WORD,
-            font=('Consolas', 9),
+            font=('Arial', 10),
             bg='#1e1e1e',
-            fg='#00ff00'
+            fg='#ffffff'
         )
-        
+
         scrollbar = tk.Scrollbar(log_scroll_frame, orient=tk.VERTICAL, command=self.log_text.yview)
         self.log_text.configure(yscrollcommand=scrollbar.set)
         
@@ -1554,7 +1554,7 @@ class SOCSecurityAnalyzer:
             text=f"Enhanced SOC Security Analyzer v{self.version} | Ready",
             bg='#34495e',
             fg='white',
-            font=('Segoe UI', 9)
+            font=('Times New Roman', 9)
         )
         status_text.pack(side=tk.LEFT, padx=10, pady=3)
 

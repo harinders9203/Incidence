@@ -1,0 +1,95 @@
+{
+  "timestamp": "2025-11-20T13:08:07.597480",
+  "summary": {
+    "total_processes_scanned": 272,
+    "suspicious_processes_found": 4,
+    "persistence_threats_found": 0,
+    "service_analysis": {
+      "total_services": 0,
+      "critical_service_risks": 0,
+      "high_service_risks": 0,
+      "medium_service_risks": 0,
+      "suspicious_services": 0,
+      "service_recommendations": 0
+    },
+    "risk_level": "HIGH",
+    "system_info": {
+      "hostname": "DESKTOP-K9M4GL1",
+      "platform": "Windows-11-10.0.26120-SP0",
+      "system": "Windows",
+      "release": "11",
+      "version": "10.0.26120",
+      "machine": "AMD64",
+      "processor": "Intel64 Family 6 Model 94 Stepping 3, GenuineIntel",
+      "uptime_seconds": 1763610766.7581837,
+      "uptime_readable": "2025-11-20 09:22:46",
+      "current_time": "2025-11-20 13:07:37",
+      "is_windows": true
+    }
+  },
+  "suspicious_processes": [
+    {
+      "pid": 4944,
+      "name": "MpDefenderCoreService.exe",
+      "user": null,
+      "status": "running",
+      "cpu_percent": 0.0,
+      "memory_percent": 0.09,
+      "executable_path": "C:\\ProgramData\\Microsoft\\Windows Defender\\Platform\\4.18.25100.9008-0\\MpDefenderCoreService.exe",
+      "command_line": "N/A",
+      "file_hash": "dc0e4dcb07afcd00e4f89961668e4f68c3ebdc6141e3acc76f6efe76d48b4a16",
+      "suspicion_score": 30,
+      "flags": [
+        "running_from_suspicious_location"
+      ]
+    },
+    {
+      "pid": 5048,
+      "name": "MsMpEng.exe",
+      "user": null,
+      "status": "running",
+      "cpu_percent": 0.0,
+      "memory_percent": 1.84,
+      "executable_path": "C:\\ProgramData\\Microsoft\\Windows Defender\\Platform\\4.18.25100.9008-0\\MsMpEng.exe",
+      "command_line": "N/A",
+      "file_hash": "71426b0ebc8ee5e7e5d76f39ecb0f2cf36f4914b2ad1d4ec1b05ced9196ae2bf",
+      "suspicion_score": 30,
+      "flags": [
+        "running_from_suspicious_location"
+      ]
+    },
+    {
+      "pid": 5180,
+      "name": "WsidService.exe",
+      "user": null,
+      "status": "running",
+      "cpu_percent": 0.0,
+      "memory_percent": 0.01,
+      "executable_path": "C:\\ProgramData\\Wondershare\\wsServices\\WsidService.exe",
+      "command_line": "N/A",
+      "file_hash": "e5e1e6644f868fe7a6f533d02752ec24f6cc8025c455f4e8ed891d84c750fb95",
+      "suspicion_score": 30,
+      "flags": [
+        "running_from_suspicious_location"
+      ]
+    },
+    {
+      "pid": 8296,
+      "name": "NisSrv.exe",
+      "user": null,
+      "status": "running",
+      "cpu_percent": 0.0,
+      "memory_percent": 0.03,
+      "executable_path": "C:\\ProgramData\\Microsoft\\Windows Defender\\Platform\\4.18.25100.9008-0\\NisSrv.exe",
+      "command_line": "N/A",
+      "file_hash": "20464389712633be65da53374a33992e29834a2af4a046194839762d5e3dfa55",
+      "suspicion_score": 30,
+      "flags": [
+        "running_from_suspicious_location"
+      ]
+    }
+  ],
+  "persistence_threats": [],
+  "service_analysis": {},
+  "recommendations": []
+}
